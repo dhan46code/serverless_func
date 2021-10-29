@@ -2,7 +2,9 @@ const result = document.querySelector('.result');
 
 const fetchData = async () => {
   try {
-    const { data } = await axios.get('/api/2-basic-api/');
+    const { data } = await axios.get(
+      'https://dhan-serverless.netlify.app/api/2-basic-api'
+    );
     // kita map array agar bisa di print ke browser
     const products = data
       .map((product) => {
