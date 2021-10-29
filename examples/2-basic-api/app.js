@@ -27,6 +27,7 @@ const fetchData = async () => {
     result.innerHTML = products;
   } catch (error) {
     console.log(error.response.data);
+    result.innerHTML = `<h4>This page error check your api</h4>`;
   }
 };
 
